@@ -1,0 +1,66 @@
+/* chatbox.css */
+.open-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    z-index: 9;
+    border-radius: 15px;
+  }
+  
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    border-radius: 15px;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .chathistory {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  
+  /* Add styles to the cancel button */
+  .cancel {
+    background-color: #f44336;
+  }
+  
+  /* Add styles to the send button */
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  /* Add styles to the chat message */
+  #messages {
+    margin: 10px 0;
+    max-width: 80%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .time-right {
+    float: right;
+    color: #aaa;
+    font-size: 12px;
+  }
+  

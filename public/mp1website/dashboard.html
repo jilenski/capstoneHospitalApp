@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>MDCare - eHealth Portal</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="public/mp1website/assets/css/app.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="public/mp1website/assets/css/style.css">
+  <link rel="stylesheet" href="public/mp1website/assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="public/mp1website/assets/css/custom.css">
+  <link rel='shortcut icon' type='image/x-icon' href='public/mp1website/img/logo.png' />
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                <i data-feather="maximize"></i>
+              </a></li>
+            <li>
+              <form class="form-inline mr-auto">
+                <div class="search-element">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200">
+                  <button class="btn" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i>
+              <span class="badge headerBadge1">
+                6 </span> </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+              <div class="dropdown-header">
+                Messages
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
+											text-white"> <img alt="image" src="public/mp1website/assets/img/users/user-1.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">John
+                      Deo</span>
+                    <span class="time messege-text">Please check your mail !!</span>
+                    <span class="time">2 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="public/mp1website/assets/img/users/user-2.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                      Smith</span> <span class="time messege-text">Request for leave
+                      application</span>
+                    <span class="time">5 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="public/mp1website/assets/img/users/user-5.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
+                      Ryan</span> <span class="time messege-text">Your payment invoice is
+                      generated.</span> <span class="time">12 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-4.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
+                      Smith</span> <span class="time messege-text">hii John, I have upload
+                      doc
+                      related to task.</span> <span class="time">30
+                      Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
+                      Joshi</span> <span class="time messege-text">Please do as specify.
+                      Let me
+                      know if you have any query.</span> <span class="time">1
+                      Days Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                      Smith</span> <span class="time messege-text">Client Requirements</span>
+                    <span class="time">2 Days Ago</span>
+                  </span>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
+            </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+              <div class="dropdown-header">
+                Notifications
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread"> <span
+                    class="dropdown-item-icon bg-primary text-white"> <i class="fas
+												fa-code"></i>
+                  </span> <span class="dropdown-item-desc"> Template update is
+                    available now! <span class="time">2 Min
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="far
+												fa-user"></i>
+                  </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
+                      Sugiharto</b> are now friends <span class="time">10 Hours
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
+                      class="fas
+												fa-check"></i>
+                  </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
+                    moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
+                      Hours
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i
+                      class="fas fa-exclamation-triangle"></i>
+                  </span> <span class="dropdown-item-desc"> Low disk space. Let's
+                    clean it! <span class="time">17 Hours Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="fas
+												fa-bell"></i>
+                  </span> <span class="dropdown-item-desc"> Welcome to Otika
+                    template! <span class="time">Yesterday</span>
+                  </span>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
+                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right pullDown">
+              <div class="dropdown-title">Hello Sarah Smith</div>
+              <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+										fa-user"></i> Profile
+              </a> <a href="timeline.html" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+                Activities
+              </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                Settings
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="index.html" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="#"> <img alt="image" src="img/logo.png" class="header-logo" /> <span
+                class="logo-name">MDCare</span>
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Dashboard</li>
+            <li class="active">
+              <a href="dashboard.html" class="nav-link"><i data-feather="home"></i><span>Home</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="appointments.html" class="nav-link"><i data-feather="calendar"></i><span>Appointments</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="messages.html" class="nav-link"><i data-feather="message-circle"></i><span>Messages</span></a>
+            </li>
+
+            <li class="menu-header">Medical</li>
+            <li class="dropdown">
+              <a class="nav-link" href="lab-results.html"><i data-feather="file-text"></i><span>Lab Results</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" href="medical-records.html"><i data-feather="clipboard"></i><span>Medical Records</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" href="prescriptions.html"><i data-feather="octagon"></i><span>Prescriptions</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" href="care-plans.html"><i data-feather="shield"></i><span>Care Plans</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" href="forms.html"><i data-feather="layout"></i><span>Forms</span></a>
+            </li>
+                  
+            <li class="menu-header">Finance</li>
+            <li class="dropdown">
+              <a class="nav-link" href="billing.html"><i data-feather="dollar-sign"></i><span>Billing</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" href="history.html"><i data-feather="file-plus"></i><span>History</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" href="reports.html"><i data-feather="bar-chart-2"></i><span>Reports</span></a>
+            </li>
+
+            <li class="menu-header">Understand</li>
+            <li class="dropdown">
+              <a class="nav-link" href="webmd.html"><i data-feather="book-open"></i><span>WebMD</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" href="support.html"><i data-feather="headphones"></i><span>Support</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row ">
+              <div class="col-12 col-sm-12 col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="alert alert-light alert-has-icon">
+                      <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
+                      <div class="alert-body">
+                        <div class="alert-title">New COVID-19 update for patients
+                          <span class="badge badge-info">NEW</span>
+                        </div>
+                        <div>All patients that have not received their results for COVID-19 will need to ensure they stay isolated for a minimum of 14 days</div>
+                      </div>
+                      <div style="display:flex; align-items:flex-end;">
+                      <div class="buttons" style="float:right;">
+                          <a href="#" class="btn btn-outline-info" style="float: right;">See details</a>
+                      </div>
+                     </div>                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="row ">
+              <div class="col-x1-4 col-md-12 col-lg-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Appointments</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="media">
+                      <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-2.jpg">
+                      <div class="media-body">
+                        <div class="media-title">Dr Firstname Surname</div>
+                        <div class="text-job text-muted">Gastroenterologist</div>
+                      </div>
+                    </div></br>
+                    <div class="grid-container">
+                      <div class="grid-item">
+                        <span>Date</span>
+                        <div class="text-dark mb-2">Friday 17 March, 2023</div>
+                      </div>
+                      <div class="grid-item">
+                        <span>Time</span>
+                        <div class="text-dark mb-2">9:30am to 10:00am</div>
+                        <div class="text-info mb-2"><i class="fas fa-clock"></i><b> 30 mins</b></div>
+                      </div>
+                      <div class="grid-item">
+                        <span>Address</span>
+                        <div class="text-dark mb-2">Suite 405, Level 4/188</br>
+                          123 Street, Quezon City</br>
+                          Philippines</div>
+                      </div>  
+                      <div class="grid-item">
+                        <span>Areas of Interest</span>
+                        <div class="text-dark mb-2">Men’s health</br>
+                          Travel medicine</br>
+                          Travel advice</br>
+                          General practice</div>
+                      </div>
+                      <div class="grid-item">
+                        <a href="#" class="text-secondary mb-2"><i class="fas fa-times-circle"></i><b> Cancel Booking</b></a>
+                      </div>
+                      <div class="grid-item">
+                        <a href="#" class="text-secondary mb-2"><i class="fas fa-calendar-alt"></i><b> Reschedule</b></a>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-8 col-md-12 col-lg-8">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Recent Activity</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled user-progress list-unstyled-border list-unstyled-noborder">
+                      <li class="media">
+                        <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-2.jpg">
+                        <div class="media-body">
+                          <div class="media-title">Dr Firstname Surname</div>
+                          <div class="text-job text-muted">03 May, 2022</div>
+                        </div>
+                        <div class="media-progressbar">
+                          <div>Dr Firstname Surname added two new conditions to your health record on the 09 May regarding your symptoms</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img alt="image" class="mr-3 rounded-circle" width="50" src="img/medicard.png">
+                        <div class="media-body">
+                          <div class="media-title">MediCard</div>
+                          <div class="text-job text-muted">24 Apr, 2022</div>
+                        </div>
+                        <div class="media-progressbar">
+                          <div>Medicard has sent a benefit of $132.44 for item <span class="badge badge-info">3566</span> </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-3.jpg">
+                        <div class="media-body">
+                          <div class="media-title">Dr Firstname Surname</div>
+                          <div class="text-job text-muted">17 Apr, 2022</div>
+                        </div>
+                        <div class="media-progressbar">
+                          <div>
+                            <div>Dr Firstname Surname has updated the prescription of <span class="badge badge-info">Alfuzosin</span> from 8mg to 10mg </div>
+                          </div></br>
+                          <div class="alert alert-light">
+                            Note: “This increase should help manage some of the pain as well as the inflammation. Be sure to take with food and try to avoid direct sun exposure if possible.”
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-1.jpg">
+                        <div class="media-body">
+                          <div class="media-title">Dr Firstname Surname</div>
+                          <div class="text-job text-muted">03 Mar, 2022</div>
+                        </div>
+                        <div class="media-progressbar">
+                          <div>Dr Firstname Surname at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="row ">
+              <div class="col-x1-4 col-md-12 col-lg-4">
+                <h4 class="section-title">Medications</h4>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="text-dark mb-2">Fenofibrate (48mg)</h4>
+                    Take with food every morning.
+                  </div>
+                  <div class="card-footer" style="color:rgb(0, 225, 255)">
+                    Last refill 27 Apr, 2022
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="text-dark mb-2">Alfuzosin (10mg)</h4>
+                    Take 1 with food twice a day, and avoid drinking alcohol for 2 hours after
+                  </div>
+                  <div class="card-footer" style="color:rgb(0, 225, 255)">
+                    Last refill 27 Apr, 2022
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="text-dark mb-2">Dexamethasone (4mg)</h4>
+                    Take 3 tablets, 3 times a day for 7 days
+                  </div>
+                  <div class="card-footer" style="color:rgb(0, 225, 255)">
+                    Last refill 27 Apr, 2022
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-x1-3 col-md-10 col-lg-4">
+                <h4 class="section-title">Current Conditions</h4>
+                <div class="card">
+                  <div class="card-body">
+                    <span class="badge badge-warning">MODERATE</span></br></br>
+                    <h1 class="text-dark mb-2">Sinusitis</h1></br>
+                    A condition in which the cavities around the nasal passages become inflamed
+
+                    <div class="grid-container">
+                      <div class="grid-item">
+                        <span>Primary</span>
+                        <div class="media">
+                          <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-2.jpg">
+                          <div class="media-body">
+                            <div class="media-title">Dr Firstname</br>Surname</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <span>Last seen</span>
+                        <div class="text-dark mb-2">05 Mar, 2022</div>
+                      </div>
+                      <div class="grid-item">
+                        <span>Treatment</span>
+                        <div class="text-dark mb-2"><b>Nasonex Aerosol</b></div>
+                        <span>Mometasone furate</span></br>
+                        <span>50mcg/spray</span>
+                      </div>  
+                      <div class="grid-item">
+                        <span>Next Appointment</span>
+                        <a href="#" class="btn btn-outline-secondary">Schedule</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-x1-4 col-md-12 col-lg-4">
+                <h4 class="section-title">Recent Bills</h4>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="grid-container">
+                      <div class="grid-item">
+                        <span>Your payment</span>
+                        <h1 class="text-dark mb-2">$110.00</h1>
+                      </div>
+                      <div class="grid-item" style="text-align:right">
+                        <span>Medicard</span>
+                        <div class="text-dark mb-2"><b>$124.00</b></div>
+                      </div>
+                      <div class="grid-item">
+                        <span>Paid on the </span><b>27 Apr, 2020</b></br>
+                        <span>to </span><b>MDCare Pty Ltd </b>
+                      </div>  
+                      <div class="grid-item" style="text-align:right">
+                        <span>Total</span>
+                        <div class="text-dark mb-2"><b>$234.00</b></div>
+                      </div>
+                    </div>
+
+                    <div class="media">
+                      <img alt="image" class="mr-3 rounded-circle" width="50" src="img/team-2.jpg">
+                      <div class="media-body">
+                        <div class="media-title">Dr Firstname Surname</div>
+                        <div class="text-job text-muted">Gastroenterologist</div>
+                      </div>
+                    </div></br></br>
+                    
+                    <div class="text-dark mb-2"><i class="fas fa-map-marker-alt"></i> Suite 206/203-233 123 Street, Quezon City, Philippines</div></br></br>
+                    <a href="#" class="text-dark mb-2"><i class="fas fa-file-alt"></i> Standard ENT Consult.pdf</a></br></br>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        
+        <div class="settingSidebar">
+          <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
+          </a>
+          <div class="settingSidebar-body ps-container ps-theme-default">
+            <div class=" fade show active">
+              <div class="setting-panel-header">Setting Panel
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Select Layout</h6>
+                <div class="selectgroup layout-color w-50">
+                  <label class="selectgroup-item">
+                    <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked>
+                    <span class="selectgroup-button">Light</span>
+                  </label>
+                  <label class="selectgroup-item">
+                    <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout">
+                    <span class="selectgroup-button">Dark</span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Sidebar Color</h6>
+                <div class="selectgroup selectgroup-pills sidebar-color">
+                  <label class="selectgroup-item">
+                    <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar">
+                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                      data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
+                  </label>
+                  <label class="selectgroup-item">
+                    <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked>
+                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                      data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Color Theme</h6>
+                <div class="theme-setting-options">
+                  <ul class="choose-theme list-unstyled mb-0">
+                    <li title="white" class="active">
+                      <div class="white"></div>
+                    </li>
+                    <li title="cyan">
+                      <div class="cyan"></div>
+                    </li>
+                    <li title="black">
+                      <div class="black"></div>
+                    </li>
+                    <li title="purple">
+                      <div class="purple"></div>
+                    </li>
+                    <li title="orange">
+                      <div class="orange"></div>
+                    </li>
+                    <li title="green">
+                      <div class="green"></div>
+                    </li>
+                    <li title="red">
+                      <div class="red"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <div class="theme-setting-options">
+                  <label class="m-b-0">
+                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                      id="mini_sidebar_setting">
+                    <span class="custom-switch-indicator"></span>
+                    <span class="control-label p-l-10">Mini Sidebar</span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <div class="theme-setting-options">
+                  <label class="m-b-0">
+                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                      id="sticky_header_setting">
+                    <span class="custom-switch-indicator"></span>
+                    <span class="control-label p-l-10">Sticky Header</span>
+                  </label>
+                </div>
+              </div>
+              <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme">
+                  <i class="fas fa-undo"></i> Restore Default
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <!-- Page Specific JS File -->
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+</body>
+
+
+<!-- blank.html  21 Nov 2019 03:54:41 GMT -->
+</html>
